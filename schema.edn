@@ -1,0 +1,12 @@
+[;player
+ {:db/id #db/id[:db.part/db]
+  :db/ident :player/username
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/unique :db.unique/value
+  :db.install/_attribute :db.part/db}
+
+  ;partitions
+   {:db/id #db/id[:db.part/db]
+    :db/ident :player
+    :db.install/_partition :db.part/db}]
