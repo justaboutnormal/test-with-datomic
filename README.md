@@ -8,7 +8,7 @@ if you have it.
 
 ## Usage
 
-Make sure [Leiningen](https://github.com/technomancy/leiningen) is installed.
+Make sure [Leiningen](https://github.com/technomancy/leiningen) is installed and that Datomic is running (free version is okay).
 
 From command prompt in the project directory.
 
