@@ -7,9 +7,9 @@
 
 (deftest user-db-tests
   (testing "User creation and retrieval"
-    (let [conn (test-db/connect!)
+    (let [conn (test-db/test-connect!)
           username "joe"
-          user-tx (create-user! conn username) ;Creating a user isn't explicitly tested, but is tested in the get-user test. Should I fix that?
+          user-tx (create-user! conn username) ;Creating a user is implicitly tested in the get-user test. How could I create its own test?
           ids (:tempids user-tx)
           [temp-id] (keys ids)
           user-id (get ids temp-id)]
